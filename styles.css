@@ -143,38 +143,24 @@ body {
   color: var(--eskom-blue);
 }
 
-/* ✅ TIPS CARD */
+/* ✅ 3RD CARD: FULL TIPS IMAGE */
 .appliance-guide {
   background-color: var(--white);
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin-bottom: 40px;
+  text-align: center;
 }
 
-.appliance-guide h2 {
-  color: var(--eskom-blue);
-  margin-bottom: 20px;
-}
-
-.appliance-flex {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.tips-image {
-  width: 160px;
+.tips-full-image {
+  width: 100%;
   height: auto;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  flex-shrink: 0;
-}
-
-.appliance-guide ul {
-  list-style: disc;
-  padding-left: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 /* ✅ FOOTER */
@@ -207,14 +193,9 @@ body {
     width: 100%;
   }
 
-  .appliance-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tips-image {
+  .tips-full-image {
     width: 100%;
-    max-width: 300px;
+    max-width: none;
   }
 
   .footer-flex {
@@ -223,3 +204,4 @@ body {
     text-align: center;
   }
 }
+
