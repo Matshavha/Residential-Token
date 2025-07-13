@@ -48,4 +48,3 @@ document.getElementById("tokenForm").addEventListener("submit", function (e) {
 // Set update date dynamically
 document.getElementById("updateDate").textContent =
   "Updated: " + new Date().toISOString().slice(0, 10);
-
