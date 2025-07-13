@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eskom Residential Token Purchase Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ✅ FULL HEADER IMAGE -->
+  <header class="site-header">
+    <img src="images/header.png" alt="Eskom Header" class="header-image" />
+  </header>
+
+  <main class="container">
+    
+    <!-- ✅ FULL FIRST CARD IMAGE -->
+    <section class="intro-section">
+      <img src="images/description.png" alt="Buying electricity tokens" class="intro-image" />
+    </section>
+
+    <!-- ✅ CALCULATOR -->
+    <section class="calculator-section">
+      <h2>Electricity Token Calculator</h2>
+      <form id="tokenForm">
+        <div class="form-group">
+          <label for="amount">
+            How much money do you want to spend in a month (including VAT)?
+          </label>
+          <div class="form-row">
+            <input type="number" id="amount" step="0.01" placeholder="e.g. 100" required />
+            <button type="submit">Calculate</button>
+          </div>
+        </div>
+      </form>
+      <div id="results" class="results-table-container"></div>
+    </section>
+
+    <!-- ✅ APPLIANCE TIPS -->
+    <section class="appliance-guide">
+      <h2>Tips: General Appliance Electricity Consumption Per Hour</h2>
+      <div class="appliance-flex">
+        <img src="images/resident.png" alt="Resident" class="resident-image" />
+        <ul>
+          <li>Hot stove: 1kWh - 1.5kWh</li>
+          <li>Small fridge: 0 - 0.5kWh</li>
+          <li>Small washing machine: 0.5kWh - 1.0kWh</li>
+          <li>TV: 0 - 0.5kWh</li>
+          <li>Geyser: 2.5kWh - 3kWh</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <span>&copy; 2025 Eskom Holdings SOC Ltd</span>
+      <span id="updateDate"></span>
+    </div>
+  </footer>
+
+  <script src="tool.js"></script>
+</body>
+</html>
