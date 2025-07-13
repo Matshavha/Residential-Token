@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eskom Residential Token Purchase Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <img src="images/eskom_logo.png" alt="Eskom Logo" class="logo" />
+      <h1>Residential Token Purchase Tool</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Intro Section -->
+    <section class="intro-section">
+      <div class="intro-text">
+        <h2>Buying Electricity Tokens</h2>
+        <div class="gold-line"></div>
+        <p>Calculate the amount of tokens you will get if you are a pre-paid customer on Homelight 20A or Homelight 60A.</p>
+        <p>To find out your Amps (A) and tariff, check your last token for a TI number. The TI number is 07 for Homelight 20A and 02 for Homelight 60A.</p>
+        <img src="images/token.png" alt="Token Slip" class="token-image" />
+        <p>For every unit of electricity, Homelight 20A costs 248.53c/kWh and Homelight 60A costs 315.93c/kWh (including VAT).</p>
+      </div>
+      <div class="intro-image">
+        <img src="images/meter.png" alt="Meter Device" class="meter-image" />
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+      <h2>Electricity Token Calculator</h2>
+      <form id="tokenForm">
+        <div class="form-group">
+          <label for="amount">How much money do you want to spend in a month (including VAT)?</label>
+          <div class="form-row">
+            <input type="number" id="amount" step="0.01" placeholder="e.g. 100" required />
+            <button type="submit">Calculate</button>
+          </div>
+        </div>
+      </form>
+      <div id="results" class="results-table-container"></div>
+    </section>
+
+    <!-- Appliance Guide -->
+    <section class="appliance-guide">
+      <h2>Tips: General Appliance Electricity Consumption Per Hour</h2>
+      <div class="appliance-flex">
+        <img src="images/resident.png" alt="Resident" class="resident-image" />
+        <ul>
+          <li>Hot stove: 1kWh - 1.5kWh</li>
+          <li>Small fridge: 0 - 0.5kWh</li>
+          <li>Small washing machine: 0.5kWh - 1.0kWh</li>
+          <li>TV: 0 - 0.5kWh</li>
+          <li>Geyser: 2.5kWh - 3kWh</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <span>&copy; 2025 Eskom Holdings SOC Ltd</span>
+      <span id="updateDate"></span>
+    </div>
+  </footer>
+
+  <script src="tool.js"></script>
+</body>
+</html>
+
+
