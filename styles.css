@@ -1,0 +1,54 @@
+:root {
+  --eskom-blue: #003399;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  background-color: var(--eskom-blue);
+  color: var(--white);
+  padding: 15px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.header-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .header-title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
