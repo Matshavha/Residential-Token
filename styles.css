@@ -143,7 +143,7 @@ body {
   color: var(--eskom-blue);
 }
 
-/* ✅ APPLIANCE GUIDE */
+/* ✅ TIPS CARD */
 .appliance-guide {
   background-color: var(--white);
   padding: 30px;
@@ -160,15 +160,16 @@ body {
 .appliance-flex {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
-.resident-image {
-  width: 120px;
+.tips-image {
+  width: 160px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  flex-shrink: 0;
 }
 
 .appliance-guide ul {
@@ -209,6 +210,11 @@ body {
   .appliance-flex {
     flex-direction: column;
     align-items: center;
+  }
+
+  .tips-image {
+    width: 100%;
+    max-width: 300px;
   }
 
   .footer-flex {
