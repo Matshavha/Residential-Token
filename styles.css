@@ -170,20 +170,20 @@ body {
 /* ✅ RESPONSIVE */
 @media (max-width: 768px) {
   .calculator-section h2 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .form-label {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .form-grid input {
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 100%;
   }
 
   .calculate-btn {
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 100%;
   }
 
