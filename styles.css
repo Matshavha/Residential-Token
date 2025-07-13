@@ -13,17 +13,24 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--light-gray);
   color: var(--dark-gray);
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  flex: 1;
 }
 
 /* ✅ HEADER IMAGE */
@@ -61,7 +68,8 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin-bottom: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
   text-align: left;
 }
 
@@ -72,7 +80,6 @@ body {
   text-align: left;
 }
 
-/* Two-column grid for label, input, button */
 .form-grid {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -151,20 +158,15 @@ body {
 /* ✅ FOOTER */
 .site-footer {
   background-color: var(--eskom-blue);
-  color: var(--white);
-  padding: 15px 0;
+  text-align: center;
 }
 
-.footer-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  font-size: 0.9em;
-}
-
-.footer-flex span {
+.footer-image {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
   display: block;
+  margin: 0 auto;
 }
 
 /* ✅ RESPONSIVE */
@@ -186,24 +188,4 @@ body {
     font-size: 0.8em;
     width: 100%;
   }
-
-  .footer-flex {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
 }
-
-.site-footer {
-  background-color: var(--eskom-blue);
-  text-align: center;
-}
-
-.footer-image {
-  width: 100%;
-  height: auto;
-  max-width: 1920px;
-  display: block;
-  margin: 0 auto;
-}
-
