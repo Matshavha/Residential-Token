@@ -7,47 +7,74 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- ✅ FULL HEADER IMAGE -->
-  <header class="site-header">
-    <img src="images/header.png" alt="Eskom Header" class="header-image" />
+  <header>
+    <img src="images/eskom_logo.png" alt="Eskom Logo" class="logo" />
+    <h1>Residential Token Purchase Tool</h1>
   </header>
 
-  <main class="container">
-
-    <!-- ✅ FIRST CARD: DESCRIPTION IMAGE -->
+  <main>
     <section class="intro-section">
-      <img src="images/description.png" alt="Buying electricity tokens" class="intro-image" />
+      <div class="intro-text">
+        <div class="intro-title-row">
+          <h2 class="section-title">Buying electricity tokens</h2>
+          <div class="gold-line"></div>
+        </div>
+        <p>
+          Calculate the amount of tokens you will get if you are a pre-paid customer on
+          Homelight 20A or Homelight 60A.
+        </p>
+        <p class="token-explanation">
+          To find out your Amps (A) and tariff, please look at your last token for a TI number.
+          The TI number is 07 for Homelight 20A tariff and 02 for Homelight 60A tariff.
+          <img src="images/token.png" alt="Token Slip" class="token-image" />
+        </p>
+        <p>
+          For every unit of electricity, on Homelight 20A it is 248.53c/kWh and on
+          Homelight 60A it is 315.93c/kWh (including VAT).
+        </p>
+      </div>
+      <div class="intro-image">
+        <img src="images/meter.png" alt="Meter Device" class="meter-image" />
+      </div>
     </section>
 
-    <!-- ✅ CALCULATOR SECTION -->
-    <section class="calculator-section">
-      <h2>Electricity Token Calculator</h2>
+    <section class="calculator">
       <form id="tokenForm">
-        <div class="form-grid">
-          <label for="amount" class="form-label">
-            How much money do you want to spend in a month (including VAT)?
-          </label>
-          <input type="number" id="amount" step="0.01" placeholder="e.g. 100" required />
-          <button type="submit" class="calculate-btn">Calculate</button>
+        <div class="form-row">
+          <label for="amount">How much money do you want to spend in a month (including VAT)?</label>
+          <div class="input-button-group">
+            <input type="number" id="amount" step="0.01" placeholder="e.g. 100" required />
+            <button type="submit">Calculate</button>
+          </div>
         </div>
       </form>
+
       <div id="results" class="results-table-container"></div>
     </section>
 
-    <!-- ✅ THIRD CARD: TIPS IMAGE -->
-    <section class="intro-section">
-      <img src="images/tips.png" alt="Tips: General Appliance Electricity Consumption Per Hour" class="intro-image" />
+    <section class="appliance-guide">
+      <h2>Tips: general appliance electricity consumption per hour</h2>
+      <div class="appliance-content">
+        <img src="images/resident.png" alt="Resident" class="resident-image" />
+        <ul>
+          <li>Hot stove: 1kWh - 1.5kWh</li>
+          <li>Small fridge: 0 - 0.5kWh</li>
+          <li>Small washing machine: 0.5kWh - 1.0kWh</li>
+          <li>TV: 0 - 0.5kWh</li>
+          <li>Geyser: 2.5kWh - 3kWh</li>
+        </ul>
+      </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
-    <img src="images/footer.png" alt="Eskom Footer" class="footer-image" />
+  <footer>
+    <span>&copy; 2025 Eskom Holdings SOC Ltd</span>
+    <span id="updateDate" class="footer-date"></span>
   </footer>
 
   <script src="tool.js"></script>
 </body>
 </html>
+
 
 
