@@ -136,7 +136,8 @@ main {
 }
 
 .calculator {
-  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .calculator h2 {
@@ -151,29 +152,22 @@ form {
 
 .form-row {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .form-row label {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 10px;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.indent-group {
-  padding-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex: 1 1 300px;
+  text-align: center;
 }
 
 .input-button-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: auto;
 }
 
 .input-button-group input,
@@ -343,11 +337,6 @@ footer {
     text-align: left;
   }
 
-  .indent-group {
-    padding-left: 0;
-    align-items: stretch;
-  }
-
   .input-button-group input,
   .input-button-group button {
     width: 100%;
@@ -355,7 +344,6 @@ footer {
 
   .input-button-group {
     width: 100%;
-    align-items: stretch;
   }
 
   .results-table th,
@@ -384,3 +372,4 @@ footer {
     padding: 10px;
   }
 }
+
