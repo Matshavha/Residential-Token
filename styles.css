@@ -152,45 +152,53 @@ form {
 .form-row {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: stretch;
 }
 
 .form-row label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
   font-weight: normal;
   font-size: 16px;
-  margin-bottom: 5px;
 }
 
-.inline-group {
+.indent-group {
+  padding-left: 50px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.inline-group input {
+.input-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-button-group input,
+.input-button-group button {
   width: 200px;
   padding: 10px;
-  border: 1px solid var(--eskom-blue);
   border-radius: 4px;
+  margin: 0 0 10px 0;
   box-sizing: border-box;
 }
 
-.form-row button {
-  width: 200px;
-  padding: 12px;
-  border-radius: 4px;
-  border: none;
+.input-button-group input {
+  border: 1px solid var(--eskom-blue);
+}
+
+.input-button-group button {
   background-color: var(--eskom-blue);
   color: var(--white);
+  border: none;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.form-row button:hover {
+.input-button-group button:hover {
   background-color: #83725B;
 }
 
@@ -324,14 +332,30 @@ footer {
     width: 100%;
   }
 
-  .inline-group {
+  .form-row {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-row label {
+    flex: none;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .indent-group {
+    padding-left: 0;
     align-items: stretch;
   }
 
-  .inline-group input,
-  .form-row button {
+  .input-button-group input,
+  .input-button-group button {
     width: 100%;
+  }
+
+  .input-button-group {
+    width: 100%;
+    align-items: stretch;
   }
 
   .results-table th,
@@ -360,3 +384,4 @@ footer {
     padding: 10px;
   }
 }
+
