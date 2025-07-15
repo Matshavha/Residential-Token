@@ -23,7 +23,8 @@ header {
 }
 
 header .logo {
-  height: 50px;
+  height: 80px;
+  width: auto;
   margin: 15px 0 0 20px;
   float: left;
 }
