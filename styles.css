@@ -129,7 +129,7 @@ main {
   position: absolute;
   top: -25px;
   left: 90%;
-  margin-left: 65px;
+  margin-left: 66px;
   height: 80px;
   border-radius: 6px;
   flex-shrink: 0;
@@ -235,7 +235,7 @@ form {
 }
 
 .results-table tr:hover {
-  background-color: var(--eskom-blue);
+  background-color: var(--white);
   color: var(--white);
 }
 
