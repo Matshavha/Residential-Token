@@ -17,36 +17,45 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
   background-color: var(--eskom-blue);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 10px 30px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 header .logo {
   height: 50px;
-  margin: 0;
 }
 
 header h1 {
   font-size: 24px;
-  margin-left: 20px;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
   white-space: nowrap;
 }
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  header .logo {
+    height: 40px;
   }
 
   header h1 {
-    margin-left: 0;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin: 0;
+    text-align: right;
+    white-space: normal;
+    line-height: 1.2;
+    max-width: 150px;
   }
 }
 
@@ -69,6 +78,11 @@ main {
 
 .intro-text {
   flex: 1;
+}
+
+.intro-text p {
+  text-align: justify;
+  text-align-last: left;
 }
 
 .intro-title-row {
@@ -345,4 +359,3 @@ footer {
     padding: 10px;
   }
 }
-
