@@ -16,25 +16,38 @@ body {
 }
 
 header {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   background-color: var(--eskom-blue);
   color: var(--white);
-  height: 80px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 header .logo {
   height: 50px;
-  margin: 15px 0 0 20px;
-  float: left;
+  margin: 0;
 }
 
 header h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
   font-size: 24px;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-left: 0;
+    font-size: 20px;
+    margin-top: 10px;
+  }
 }
 
 main {
@@ -128,29 +141,29 @@ form {
   display: flex;
   flex-direction: column;
   width: 200px;
+  margin-left: 0;
+}
+
+.input-button-group input,
+.input-button-group button {
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
 }
 
 .input-button-group input {
-  width: 100%;
-  padding: 10px;
   border: 1px solid var(--eskom-blue);
-  border-radius: 4px;
-  margin-bottom: 10px;
-  margin-top: -10px;
-  margin-left: -400px;
 }
 
 .input-button-group button {
   background-color: var(--eskom-blue);
   color: var(--white);
-  padding: 12px;
   border: none;
-  border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%;
-  margin-left: -400px;
 }
 
 .input-button-group button:hover {
@@ -190,7 +203,8 @@ form {
 }
 
 .results-table tr:hover {
-  background-color: --eskom-blue;
+  background-color: var(--eskom-blue);
+  color: var(--white);
 }
 
 .results-value {
@@ -296,18 +310,12 @@ footer {
     font-size: 1em;
   }
 
-  .input-button-group {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .input-button-group input {
-    margin: 0;
-    width: 100%;
-  }
-
+  .input-button-group input,
   .input-button-group button {
-    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  .input-button-group {
     width: 100%;
   }
 
@@ -337,3 +345,4 @@ footer {
     padding: 10px;
   }
 }
+
