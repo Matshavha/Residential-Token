@@ -129,15 +129,14 @@ main {
   position: absolute;
   top: -25px;
   left: 90%;
-  margin-left: 60px;
+  margin-left: 55px;
   height: 80px;
   border-radius: 6px;
   flex-shrink: 0;
 }
 
 .calculator {
-  display: flex;
-  justify-content: center;
+  margin-top: 40px;
 }
 
 .calculator h2 {
@@ -152,47 +151,46 @@ form {
 
 .form-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .form-row label {
-  flex: 1 1 300px;
-  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-.input-button-group {
+.inline-group {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  width: auto;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.input-button-group input,
-.input-button-group button {
+.inline-group input {
   width: 200px;
   padding: 10px;
+  border: 1px solid var(--eskom-blue);
   border-radius: 4px;
-  margin: 0 0 10px 0;
   box-sizing: border-box;
 }
 
-.input-button-group input {
-  border: 1px solid var(--eskom-blue);
-}
-
-.input-button-group button {
+.form-row button {
+  width: 200px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
   background-color: var(--eskom-blue);
   color: var(--white);
-  border: none;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.input-button-group button:hover {
+.form-row button:hover {
   background-color: #83725B;
 }
 
@@ -326,23 +324,13 @@ footer {
     width: 100%;
   }
 
-  .form-row {
+  .inline-group {
     flex-direction: column;
-    gap: 10px;
+    align-items: stretch;
   }
 
-  .form-row label {
-    flex: none;
-    font-size: 1em;
-    text-align: left;
-  }
-
-  .input-button-group input,
-  .input-button-group button {
-    width: 100%;
-  }
-
-  .input-button-group {
+  .inline-group input,
+  .form-row button {
     width: 100%;
   }
 
@@ -372,4 +360,3 @@ footer {
     padding: 10px;
   }
 }
-
