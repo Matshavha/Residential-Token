@@ -16,20 +16,17 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  height: 100px;
+  position: relative;
   background-color: var(--eskom-blue);
   color: var(--white);
-  padding: 0 20px;
+  height: 80px;
 }
 
 header .logo {
-  height: 90px;
-  width: auto;
-  margin: 0;
+  height: 50px;
+  margin: 15px 0 0 20px;
+  float: left;
 }
-
 
 header h1 {
   position: absolute;
