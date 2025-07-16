@@ -124,21 +124,15 @@ main {
   margin-bottom: 0;
 }
 
-.token-image-container {
-  margin-top: 15px;
-  text-align: left;
-}
-
-.token-image {
-  max-width: 100%;
-  height: auto;
+/* DESKTOP layout for token image */
+.token-explanation img.token-image {
+  position: absolute;
+  top: -25px;
+  left: 90%;
+  margin-left: 66px;
+  height: 80px;
   border-radius: 6px;
-}
-
-@media (max-width: 768px) {
-  .token-image {
-    content: url("images/token_2.png");
-  }
+  flex-shrink: 0;
 }
 
 .calculator {
@@ -311,14 +305,16 @@ footer {
   }
 
   .token-explanation {
+    position: relative;
     max-width: 100%;
   }
 
   .token-explanation img.token-image {
     position: static;
-    margin-left: 0;
-    margin-top: 10px;
-    height: 80px;
+    display: block;
+    margin: 10px auto 0 auto;
+    height: 60px; /* adjust as needed */
+    content: url("images/token_2.png");
   }
 
   .section-title {
@@ -377,4 +373,3 @@ footer {
     padding: 10px;
   }
 }
-
