@@ -26,9 +26,8 @@
         <p class="token-explanation">
           To find out your Amps (A) and tariff, please look at your last token for a TI number.
           The TI number is 07 for Homelight 20A tariff and 02 for Homelight 60A tariff.
-          <img src="images/token_2.png" alt="Token Slip" class="token-image" />
+          <img src="images/token.png" alt="Token Slip" class="token-image" />
         </p>
-        
         <p>
           For every unit of electricity, on Homelight 20A it is 248.53c/kWh and on
           Homelight 60A it is 315.93c/kWh (including VAT).
@@ -41,10 +40,12 @@
 
     <section class="calculator">
       <form id="tokenForm">
-        <div class="form-grid">
+        <div class="form-row">
           <label for="amount">How much money do you want to spend in a month (including VAT)?</label>
-          <input type="number" id="amount" step="0.01" placeholder="e.g. 100" required />
-          <button type="submit">Calculate</button>
+          <div class="input-button-group">
+            <input type="number" id="amount" step="0.01" placeholder="e.g. 100" required />
+            <button type="submit">Calculate</button>
+          </div>
         </div>
       </form>
 
