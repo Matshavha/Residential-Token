@@ -120,19 +120,25 @@ main {
 }
 
 .token-explanation {
-  position: relative;
-  display: inline-block;
-  max-width: 80%;
+  max-width: 100%;
+  margin-bottom: 0;
 }
 
-.token-explanation img.token-image {
-  position: absolute;
-  top: -25px;
-  left: 90%;
-  margin-left: 66px;
-  height: 80px;
+.token-image-container {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.token-image {
+  max-width: 100%;
+  height: auto;
   border-radius: 6px;
-  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .token-image {
+    content: url("images/token_2.png");
+  }
 }
 
 .calculator {
@@ -311,16 +317,9 @@ footer {
   .token-explanation img.token-image {
     position: static;
     margin-left: 0;
-    margin-top: 20px;
-    height: 75px;
+    margin-top: 10px;
+    height: 80px;
   }
-
-  @media (max-width: 768px) {
-  .token-image {
-    content: url("images/token_2.png");
-  }
-}
-
 
   .section-title {
     font-size: 1.4em;
@@ -378,3 +377,4 @@ footer {
     padding: 10px;
   }
 }
+
