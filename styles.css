@@ -121,24 +121,18 @@ main {
 
 .token-explanation {
   position: relative;
-  max-width: 100%;
-  margin-bottom: 0;
+  display: inline-block;
+  max-width: 80%;
 }
 
-/* DESKTOP layout for token image */
 .token-explanation img.token-image {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: -25px;
+  left: 90%;
+  margin-left: 66px;
   height: 80px;
   border-radius: 6px;
-}
-
-/* Clear the float */
-.token-explanation::after {
-  content: "";
-  display: table;
-  clear: both;
+  flex-shrink: 0;
 }
 
 .calculator {
@@ -311,16 +305,14 @@ footer {
   }
 
   .token-explanation {
-    position: relative;
     max-width: 100%;
   }
 
   .token-explanation img.token-image {
     position: static;
-    display: block;
-    margin: 10px auto 0 auto;
-    height: 60px; /* adjust as needed */
-    content: url("images/token_2.png");
+    margin-left: 0;
+    margin-top: 10px;
+    height: 80px;
   }
 
   .section-title {
@@ -379,3 +371,4 @@ footer {
     padding: 10px;
   }
 }
+
