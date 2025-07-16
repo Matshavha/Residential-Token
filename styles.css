@@ -315,6 +315,13 @@ footer {
     height: 80px;
   }
 
+  @media (max-width: 768px) {
+  .token-image {
+    content: url("images/token_2.png");
+  }
+}
+
+
   .section-title {
     font-size: 1.4em;
   }
