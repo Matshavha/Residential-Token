@@ -134,6 +134,13 @@ main {
   border-radius: 6px;
 }
 
+/* Clear the float */
+.token-explanation::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .calculator {
   margin-top: 40px;
 }
